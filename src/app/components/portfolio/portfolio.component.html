@@ -1,0 +1,21 @@
+<section class="portfolio__section portfolio__section--bg section--padding" id="projects">
+    <div class="container">
+        <div class="section__heading--topbar d-flex align-items-center justify-content-between mb-50">
+            <div class="section__heading max-width-580">
+                <span class="section__heading--subtitle text__secondary">PROJECTs</span>
+                <h2 class="section__heading--title">
+                    Personal Projects
+                </h2>
+            </div>
+        </div>
+        <div class="portfolio__section--inner">
+
+            <div class="portfolio__grid mb--n30">
+                <ng-container *ngFor="let card of cards">
+                    <app-portfolio-card class="element-item" [portfolio]=card>
+                    </app-portfolio-card>
+                </ng-container>
+            </div>
+        </div>
+    </div>
+</section>

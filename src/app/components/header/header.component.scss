@@ -1,0 +1,69 @@
+.main__logo {
+    &--title {
+        line-height: 1;
+    }
+
+    &--link {
+        display: block;
+    }
+}
+
+.header__menu {
+
+    &--items {
+        position: relative;
+        padding: 1.2rem 0;
+
+        &:hover {
+            & .header__menu--link {
+                color: var(--secondary-color) !important;
+                
+                &::before {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    &--link {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        text-transform: capitalize;
+        border-radius: 2rem;
+        color: var(--primary-color);
+        position: relative;
+        font-weight: 500;
+
+        &.active {
+            color: var(--secondary-color) !important;
+
+            &::before {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.download__btn {
+    &--svg {
+        margin-right: 0.5rem;
+    }
+}
+
+.header__sticky {
+    position: fixed;
+    background: var(--body-background-color);
+    top: 0;
+    z-index: 99;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+}
+
+.header__uncollapse {
+    position: fixed;
+    background: var(--body-background-color);
+    top: 0;
+    z-index: 99;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+}

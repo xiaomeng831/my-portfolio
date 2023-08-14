@@ -1,0 +1,42 @@
+#scroll__top {
+    position: fixed;
+    bottom: 200px;
+    right: 20px;
+    z-index: 99;
+    outline: none;
+    background-color: var(--secondary-color);
+    color: var(--text-white-color);
+    box-shadow: 0 2px 22px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+    transform: translateY(50px);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    line-height: 1;
+    width: 4.3rem;
+    height: 4.3rem;
+    border-radius: 50%;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        background: var(--primary-color);
+    }
+
+    @media only screen and (max-width: 991px) {
+        bottom: 75px;
+    }
+}
+
+#scroll__top.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#scroll__top svg {
+    width: 25px;
+    line-height: 1;
+}

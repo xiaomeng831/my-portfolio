@@ -1,0 +1,15 @@
+<app-header></app-header>
+<main [@fadeInOut] class="main__content_wrapper">
+    <app-hero></app-hero>
+    <app-resume></app-resume>
+    <app-skills></app-skills>
+    <app-portfolio></app-portfolio>
+    <app-contact></app-contact>
+    <app-footer></app-footer>
+</main>
+<button id="scroll__top" *ngIf="isShow" (click)="gotoTop()" class="active">
+    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="48"
+            d="M112 244l144-144 144 144M256 120v292" />
+    </svg>
+</button>
