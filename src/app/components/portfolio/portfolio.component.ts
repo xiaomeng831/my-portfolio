@@ -14,7 +14,7 @@ export class PortfolioComponent {
       type: "Full Stack (Angular + ASP.NET Web Api)",
       github: "https://github.com/xiaomeng831/E-commerce_Web",
       techStack: "C#, .NET, TypeScript, Angular, SQL Server, Azure",
-      webLink: "https://www.bradyxuxxm.com/",
+      webLink: "http://159.203.107.183/",
       picUrl: [
         "../../../assets/img/projects/ecommerce/ecommerce1.png",
         "../../../assets/img/projects/ecommerce/ecommerce2.png",
